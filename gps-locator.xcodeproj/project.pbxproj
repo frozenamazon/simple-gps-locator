@@ -13,6 +13,8 @@
 		42028B921EA8F0C300D6F00B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42028B901EA8F0C300D6F00B /* Main.storyboard */; };
 		42028B941EA8F0C300D6F00B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42028B931EA8F0C300D6F00B /* Assets.xcassets */; };
 		42028B971EA8F0C300D6F00B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42028B951EA8F0C300D6F00B /* LaunchScreen.storyboard */; };
+		42028BA01EA8F25700D6F00B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42028B9F1EA8F25700D6F00B /* Localizable.strings */; };
+		42028BA31EA92A8700D6F00B /* CLLocation+Strings.m in Sources */ = {isa = PBXBuildFile; fileRef = 42028BA21EA92A8700D6F00B /* CLLocation+Strings.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		42028B931EA8F0C300D6F00B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42028B961EA8F0C300D6F00B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42028B981EA8F0C300D6F00B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42028B9F1EA8F25700D6F00B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		42028BA11EA92A8700D6F00B /* CLLocation+Strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+Strings.h"; sourceTree = "<group>"; };
+		42028BA21EA92A8700D6F00B /* CLLocation+Strings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+Strings.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +63,11 @@
 		42028B861EA8F0C300D6F00B /* gps-locator */ = {
 			isa = PBXGroup;
 			children = (
+				42028B9E1EA8F23D00D6F00B /* Resources */,
 				42028B8A1EA8F0C300D6F00B /* AppDelegate.h */,
 				42028B8B1EA8F0C300D6F00B /* AppDelegate.m */,
+				42028BA11EA92A8700D6F00B /* CLLocation+Strings.h */,
+				42028BA21EA92A8700D6F00B /* CLLocation+Strings.m */,
 				42028B8D1EA8F0C300D6F00B /* ViewController.h */,
 				42028B8E1EA8F0C300D6F00B /* ViewController.m */,
 				42028B901EA8F0C300D6F00B /* Main.storyboard */,
@@ -77,6 +85,14 @@
 				42028B881EA8F0C300D6F00B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42028B9E1EA8F23D00D6F00B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42028B9F1EA8F25700D6F00B /* Localizable.strings */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42028B971EA8F0C300D6F00B /* LaunchScreen.storyboard in Resources */,
+				42028BA01EA8F25700D6F00B /* Localizable.strings in Resources */,
 				42028B941EA8F0C300D6F00B /* Assets.xcassets in Resources */,
 				42028B921EA8F0C300D6F00B /* Main.storyboard in Resources */,
 			);
@@ -150,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42028BA31EA92A8700D6F00B /* CLLocation+Strings.m in Sources */,
 				42028B8F1EA8F0C300D6F00B /* ViewController.m in Sources */,
 				42028B8C1EA8F0C300D6F00B /* AppDelegate.m in Sources */,
 				42028B891EA8F0C300D6F00B /* main.m in Sources */,

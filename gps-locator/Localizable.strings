@@ -1,0 +1,17 @@
+
+/* Alert */
+"DisabledTitle" = "Location Services is Disabled";
+"DisabledMessage" = "You currently have all location services for this device disabled. If you proceed, you will be asked to confirm whether location services should be reenabled.";
+"OKButtonTitle" = "OK";
+
+/* Location Status */
+"Updating" = "Updating";
+"Tracking" = "Tracking";
+"Timed Out" = "Timed Out";
+"Error" = "Error";
+
+/* Data unavailable messages */
+"DataUnavailable" = "Unavailable";
+
+/* Formatting strings for location data output */
+"LatLongFormat" = "%.4f° %@, %.4f° %@";

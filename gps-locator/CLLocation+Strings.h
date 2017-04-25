@@ -6,8 +6,10 @@
 //  Copyright © 2017 Lisa Lau. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface CLLocation_Strings : UIView
+
+@interface CLLocation(Strings)
+- (NSString *)localizedCoordinateString;
 
 @end

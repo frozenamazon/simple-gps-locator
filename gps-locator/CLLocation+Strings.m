@@ -8,14 +8,15 @@
 
 #import "CLLocation+Strings.h"
 
-@implementation CLLocation_Strings
+@implementation CLLocation (Strings)
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (NSString *)localizedCoordinateString {
+    if (self.horizontalAccuracy < 0) {
+        return NSLocalizedString(@"DataUnavailable", @"DataUnavailable");
+    }
+    NSString *latString = (self.coordinate.latitude < 0) ? NSLocalizedString(@"South", @"South") : NSLocalizedString(@"North", @"North");
+    NSString *lonString = (self.coordinate.longitude < 0) ? NSLocalizedString(@"West", @"West") : NSLocalizedString(@"East", @"East");
+    return [NSString stringWithFormat:NSLocalizedString(@"LatLongFormat", @"LatLongFormat"), fabs(self.coordinate.latitude), latString, fabs(self.coordinate.longitude), lonString];
 }
-*/
 
 @end
